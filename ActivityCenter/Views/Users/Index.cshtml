@@ -1,0 +1,31 @@
+@model ActivityCenter.Models.UsersViewModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+<h1>Dojo Activity Center:</h1>
+    <h2>Register</h2>
+    <form asp-controller="Users" asp-action="Reg" method="post">
+        <span asp-validation-for="first"></span>
+        <input asp-for="first" placeholder="First Name"><br>
+        <span asp-validation-for="last"></span>
+        <input asp-for="last" placeholder="Last Name"><br>
+        <span asp-validation-for="email"></span>
+        <input asp-for="email" placeholder="Email"><br>
+        <span asp-validation-for="password"></span>
+        <input  asp-for="password" placeholder="Password"><br>
+        <span asp-validation-for="confirm"></span>
+        <input  asp-for="confirm" placeholder="Confirm Password"><br>
+        <br><input class="btn btn-primary" type="submit" value="Register">
+    </form>
+    <h2>Login</h2>
+    @{
+        if(@ViewBag.error != null){
+            <p>@ViewBag.error</p>
+        }
+    }
+    <form action="login" method="post">
+        <input type="text" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password"><br>
+        <br><input class="btn btn-primary" type="submit" value="Login">
+    </form>

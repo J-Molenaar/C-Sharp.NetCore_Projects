@@ -1,0 +1,19 @@
+@model BankAccounts.Models.UsersViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+<h1>Welcome to the login page!</h1>
+<h2>Login to see your account</h2>
+
+@{
+        if(@ViewBag.error != null){
+            <p>@ViewBag.error</p>
+        }
+    }
+    <form action="login" method="post">
+        <input type="text" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input class="submit" type="submit" value="Login">
+    </form>
+Need to Register? <a href="/"> Register </a>

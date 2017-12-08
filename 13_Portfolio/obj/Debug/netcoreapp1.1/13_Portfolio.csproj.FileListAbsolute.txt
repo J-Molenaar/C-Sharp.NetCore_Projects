@@ -1,0 +1,8 @@
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/bin/Debug/netcoreapp1.1/13_Portfolio.deps.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/bin/Debug/netcoreapp1.1/13_Portfolio.runtimeconfig.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/bin/Debug/netcoreapp1.1/13_Portfolio.runtimeconfig.dev.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/bin/Debug/netcoreapp1.1/13_Portfolio.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/bin/Debug/netcoreapp1.1/13_Portfolio.pdb
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/obj/Debug/netcoreapp1.1/13_Portfolio.AssemblyInfo.cs
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/obj/Debug/netcoreapp1.1/13_Portfolio.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/13_Portfolio/obj/Debug/netcoreapp1.1/13_Portfolio.pdb

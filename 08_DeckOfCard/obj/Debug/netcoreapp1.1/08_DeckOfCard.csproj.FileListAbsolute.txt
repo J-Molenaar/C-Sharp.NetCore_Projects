@@ -1,0 +1,8 @@
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/bin/Debug/netcoreapp1.1/08_DeckOfCard.deps.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/bin/Debug/netcoreapp1.1/08_DeckOfCard.runtimeconfig.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/bin/Debug/netcoreapp1.1/08_DeckOfCard.runtimeconfig.dev.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/bin/Debug/netcoreapp1.1/08_DeckOfCard.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/bin/Debug/netcoreapp1.1/08_DeckOfCard.pdb
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/obj/Debug/netcoreapp1.1/08_DeckOfCard.AssemblyInfo.cs
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/obj/Debug/netcoreapp1.1/08_DeckOfCard.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/08_DeckOfCard/obj/Debug/netcoreapp1.1/08_DeckOfCard.pdb

@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Home";
+}
+<br>
+<a href="/logout">Logout</a> <br>
+<h1>Welcome to Dojo Activity Center!</h1>
+<br>
+<h3>Hello @ViewBag.CurrUser.first!</h3>
+<br>
+<h4>Your Activities:</h4>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>Activity</th>
+        <th>Date and Time</th>
+        <th>Duration</th>
+        <th>Event Coordinator</th>
+        <th>Number of Participants</th>
+        <th>Actions</th>
+    </tr>
+@{
+    @foreach (var advent in ViewBag.AllActivities)
+    {
+    <tr>
+        <td><a href="detail/@advent.Activityid">@advent.name</a></td>
+        <td>@String.Format("{0:MMM dd, yyyy hh:mm tt}", advent.date) </td>
+        <td>@advent.duration @advent.durationtype</td>
+        <td>@advent.User.first </td>
+        <td>@advent.Guests.Count</td>
+        <td>@if (@advent.Userid == @ViewBag.CurrUser.Userid) {
+            <form action="delete/@advent.Activityid" method="post">
+            <input type="hidden" name="page">
+            <input type="submit" value="Delete" class="btn btn-link"></form>
+            }
+            else
+            {
+                bool test = false;
+                @foreach(var person in advent.Guests){
+                     @if(@person.User.Userid == @ViewBag.User)
+                        {
+                            test = true;
+                        } 
+                }
+                    if(test)
+                    {
+                        <form action="leave/@advent.Activityid" method="post">
+                            <input class="btn btn-link" type="submit" value="Leave">
+                        </form>    
+                    }
+                    else
+                    {                
+                        <form action="join/@advent.Activityid" method="post">
+                            <input class="btn btn-link" type="submit" value="Join">
+                        </form>
+                    }
+            }
+            </td>
+        </tr>
+    }
+ }
+
+
+
+<br>
+<a href="add" class="btn btn-primary">Add Activity</a>

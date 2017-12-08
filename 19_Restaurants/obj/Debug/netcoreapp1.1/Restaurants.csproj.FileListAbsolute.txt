@@ -1,0 +1,4 @@
+/Users/jessicamolenaar/Desktop/Restaurants/bin/Debug/netcoreapp1.1/Restaurants.deps.json
+/Users/jessicamolenaar/Desktop/Restaurants/bin/Debug/netcoreapp1.1/Restaurants.runtimeconfig.json
+/Users/jessicamolenaar/Desktop/Restaurants/bin/Debug/netcoreapp1.1/Restaurants.runtimeconfig.dev.json
+/Users/jessicamolenaar/Desktop/Restaurants/obj/Debug/netcoreapp1.1/Restaurants.AssemblyInfo.cs

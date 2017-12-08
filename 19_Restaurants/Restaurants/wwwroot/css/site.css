@@ -1,0 +1,23 @@
+/*Write all of your CSS here*/
+
+.jumbotron { 
+    width: 800px;
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+}
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#reviews{
+    width: 800px;
+    margin-right: 600px;
+    border-bottom: 1px solid #777;
+}
+.buttons{
+    display: inline;
+}  
+#span{
+   color: red; 
+}

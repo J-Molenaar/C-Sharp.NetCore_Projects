@@ -1,0 +1,8 @@
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/bin/Debug/netcoreapp1.1/10_CrudMySQL.deps.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/bin/Debug/netcoreapp1.1/10_CrudMySQL.runtimeconfig.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/bin/Debug/netcoreapp1.1/10_CrudMySQL.runtimeconfig.dev.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/bin/Debug/netcoreapp1.1/10_CrudMySQL.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/bin/Debug/netcoreapp1.1/10_CrudMySQL.pdb
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/obj/Debug/netcoreapp1.1/10_CrudMySQL.AssemblyInfo.cs
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/obj/Debug/netcoreapp1.1/10_CrudMySQL.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/10_CrudMySQL/obj/Debug/netcoreapp1.1/10_CrudMySQL.pdb

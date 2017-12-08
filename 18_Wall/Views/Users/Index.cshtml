@@ -1,0 +1,34 @@
+@model Users.Models.User
+@{
+    ViewData["Title"] = "Registration/Login Page";
+}
+<div class="reg_wrap">
+    <h2>Register</h2>
+    <form asp-controller="Users" asp-action="reg" method="post">
+        <span asp-validation-for="first"></span>
+        <input asp-for="first" placeholder="First Name">
+        <span asp-validation-for="last"></span>
+        <input asp-for="last" placeholder="Last Name">
+        <span asp-validation-for="email"></span>
+        <input asp-for="email" placeholder="Email">
+        <span asp-validation-for="pass1"></span>
+        <input asp-for="pass1" placeholder="Password">
+        <span asp-validation-for="pass2"></span>
+        <input asp-for="pass2" placeholder="Confirm Password">
+        <input class="submit" type="submit" value="Register">
+    </form>
+</div>
+<div class="log_wrap">
+    <h2>Login</h2>
+    @{
+        if(@ViewBag.error != null){
+            <p>@ViewBag.error</p>
+        }
+    }
+    <form action="login" method="post">
+        <input type="text" name="email" placeholder="Email">
+        <input type="password" name="pass" placeholder="Password">
+        <input class="submit" type="submit" value="Login">
+    </form>
+
+</div>

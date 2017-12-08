@@ -1,0 +1,8 @@
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/bin/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.deps.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/bin/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.runtimeconfig.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/bin/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.runtimeconfig.dev.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/bin/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/bin/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.pdb
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/obj/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.AssemblyInfo.cs
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/obj/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/09_WizzardNinjaSamurai/obj/Debug/netcoreapp1.1/09_WizzardNinjaSamurai.pdb

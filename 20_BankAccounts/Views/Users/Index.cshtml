@@ -1,0 +1,21 @@
+@model BankAccounts.Models.UsersViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+<h1>Welcome to the Resgistration page!</h1>
+    <h2>Register to see your account</h2>
+    <form asp-controller="Users" asp-action="Reg" method="post">
+        <span asp-validation-for="first"></span>
+        <input asp-for="first" placeholder="First Name"><br>
+        <span asp-validation-for="last"></span>
+        <input asp-for="last" placeholder="Last Name"><br>
+        <span asp-validation-for="email"></span>
+        <input asp-for="email" placeholder="Email"><br>
+        <span asp-validation-for="password"></span>
+        <input  asp-for="password" placeholder="Password"><br>
+        <span asp-validation-for="confirm"></span>
+        <input  asp-for="confirm" placeholder="Confirm Password"><br>
+        <input class="submit" type="submit" value="Register">
+    </form>
+    Already Registered? <a href="/signin"> Login</a>

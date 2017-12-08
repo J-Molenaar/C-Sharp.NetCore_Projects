@@ -1,0 +1,8 @@
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/bin/Debug/netcoreapp1.1/07_Human.deps.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/bin/Debug/netcoreapp1.1/07_Human.runtimeconfig.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/bin/Debug/netcoreapp1.1/07_Human.runtimeconfig.dev.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/bin/Debug/netcoreapp1.1/07_Human.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/bin/Debug/netcoreapp1.1/07_Human.pdb
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/obj/Debug/netcoreapp1.1/07_Human.AssemblyInfo.cs
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/obj/Debug/netcoreapp1.1/07_Human.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/07_Human/obj/Debug/netcoreapp1.1/07_Human.pdb

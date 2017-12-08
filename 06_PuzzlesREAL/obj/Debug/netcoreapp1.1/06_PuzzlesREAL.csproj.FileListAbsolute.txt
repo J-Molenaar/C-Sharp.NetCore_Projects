@@ -1,0 +1,8 @@
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/bin/Debug/netcoreapp1.1/06_PuzzlesREAL.deps.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/bin/Debug/netcoreapp1.1/06_PuzzlesREAL.runtimeconfig.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/bin/Debug/netcoreapp1.1/06_PuzzlesREAL.runtimeconfig.dev.json
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/bin/Debug/netcoreapp1.1/06_PuzzlesREAL.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/bin/Debug/netcoreapp1.1/06_PuzzlesREAL.pdb
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/obj/Debug/netcoreapp1.1/06_PuzzlesREAL.AssemblyInfo.cs
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/obj/Debug/netcoreapp1.1/06_PuzzlesREAL.dll
+/Users/jessicamolenaar/Documents/DojoAssignments/C#/06_PuzzlesREAL/obj/Debug/netcoreapp1.1/06_PuzzlesREAL.pdb

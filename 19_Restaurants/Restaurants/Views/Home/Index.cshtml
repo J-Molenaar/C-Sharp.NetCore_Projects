@@ -1,0 +1,58 @@
+<div id="wrapper">
+    
+    <div class="jumbotron"> 
+        <h1>Every One's a Critic</h1> 
+        <p>Restaurant Reviews</p> 
+    </div>
+    <a href="/add"><button type="button" class="btn btn-outline-danger">Add a Review</button></a><br>
+    
+    <div id="reviews">
+     <br>   
+    @{
+        foreach(var review in @ViewBag.reviews){
+        <blockquote class="blockquote">
+            <h3>@review.Place</h3>
+            <p id="address">@review.Location</p>
+            <h4 class="text-warning">@review.Stars Stars</h4>
+            <p class="mb-0">@review.Review</p>
+            <footer class="blockquote-footer">Reviewed by @review.Name on @String.Format("{0:MMM dd, yyyy}",review.Created_at) </footer>
+            <h5>Helpful: @review.Helpful</h5> <h5>Not Helpful: @review.Unhelpful</h5>
+        </blockquote>
+        <div class = "buttons">
+            <form action="helpful/@review.Id" method="post">
+                <button type="submit" class="btn btn-link">Helpful</button>
+            </form>
+            <form action="unhelpful/@review.Id" method="post">
+                <button type="submit" class="btn btn-link">Not Helpful</button>
+            </form> <br>
+        </div>
+            }
+        }
+    </div>
+
+<!--AIzaSyAcrthrItqJhIuQwrO9RN77ZBpVDvNFco0-->
+<!--        
+        <div id="map"></div>
+            <script>
+            function initMap() {
+                var address = document.getElementById('address').textContent;
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({'address': address}, function(results, status) {
+                if (status === 'OK') {
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: results[0].geometry.location
+                    });
+                    var marker = new google.maps.Marker({
+                    map:map,
+                    position: results[0].geometry.location
+                    });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+                });
+            }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcrthrItqJhIuQwrO9RN77ZBpVDvNFco0&callback=initMap">
+            </script>-->

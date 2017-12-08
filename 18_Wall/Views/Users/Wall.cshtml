@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Welcome to The Wall!";
+}
+<div class="wall_head_wrap">
+    <div id="page_title">CODING DOJO WALL</div>
+    <div id="user_section">
+        <span>Welcome, @ViewBag.name!</span>
+        <a href="/logout">logout</a>
+    </div>
+</div>
+<div id="content_wrap">
+    <div class="reg_wrap">
+        <form action="message" method="post">
+            <textarea name="message" placeholder="Write a message!"></textarea>
+            <input class="submit" type="submit" value="post">
+        </form>
+    </div>
+    @{
+        foreach(var message in @ViewBag.messages)
+        {
+    <div class="main_message_wrap">
+        <h3>@message["name"]</h3>
+        <div class="created_at"> - @message["created_at"]</div>
+        <div class="message_wrap">
+            @message["message"]
+        </div>
+        @foreach(var comment in @ViewBag.comments){
+            if(comment["message_id"] == message["id"]){
+        <div class="main_comment_wrap">
+            <h4>@comment["name"]</h4>
+            <div class="created_at"> - @comment["created_at"]</div>
+            <div class="message_wrap">
+                @comment["comment"]
+            </div>
+        </div>
+        }}
+        <div class="reg_wrap">
+            <form action='comment/@message["id"]' method="post">
+                <textarea name="comment" placeholder="Comment on this message!"></textarea>
+                <input class="submit" type="submit" value="post">
+            </form>
+        </div>
+    </div>
+    }}
+
+
+</div>

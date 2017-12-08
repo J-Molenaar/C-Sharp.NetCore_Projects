@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Details";
+}
+<br>
+<a href="/activities">Activities</a> <a href="/logout">Logout</a> <br>
+
+    <h1>@ViewBag.detail.name</h1>
+    <br>
+    <h4>When:</h4>
+    <p>@String.Format("{0:MMM dd, yyyy hh:mm tt}", ViewBag.detail.date)</p>
+    <h4>Duration:</h4>
+    <p>@ViewBag.detail.duration @ViewBag.detail.durationtype</p>
+    <br>
+    <h3>Event Coordinator: @ViewBag.Activity.User.first @ViewBag.Activity.User.last</h3>
+    <br>
+    <h4>Description</h4>
+    <p>@ViewBag.detail.description</p>
+    <br>
+    <h4>Participants:</h4>
+    <br>
+    <br>
+        @{
+            @foreach(var guest in @ViewBag.detail.Guests){
+                <p>@guest.User.first @guest.User.last</p>  
+            }
+            
+        }
+
+@{
+        @if (@ViewBag.activity.Userid == @ViewBag.CurrUser.Userid) {
+            <form action="/delete/@ViewBag.activity.Activityid" method="post">
+            <input type="hidden" name="page">
+            <input type="submit" value="Delete" class="btn btn-link"></form>
+            }
+            else
+            {
+                bool test = false;
+                @foreach(var person in ViewBag.guests){
+                     @if(@person.Userid == @ViewBag.User)
+                        {
+                            test = true;
+                        } 
+                }
+                    if(test)
+                    {
+                        <form action="/leave/@ViewBag.activity.Activityid" method="post">
+                            <input class="btn btn-link" type="submit" value="Leave">
+                        </form>    
+                    }
+                    else
+                    {                
+                        <form action="/join/@ViewBag.activity.Activityid" method="post">
+                            <input class="btn btn-link" type="submit" value="Join">
+                        </form>
+                    }
+            }
+            
+        
+    }
+
+
+

@@ -1,0 +1,60 @@
+@model Restaurants.Models.Restaurant
+
+@{
+    ViewData["Title"] = "Home Page";
+}    
+
+<div id="wrapper">
+    
+
+<div class="jumbotron"> 
+     <h1>Every One's a Critic</h1> 
+     <p> Restaurant Reviews</p> 
+</div>
+<div class="container">
+    <a href="/"><button type="button" class="btn btn-outline-danger">Home</button></a><br>
+    <h3>Post Review</h3>
+    <p><em>Tell Everyone Your Opinion (We will pretend to care)</em></p>
+    
+    <!--<form action="review" method="post">-->
+    <form asp-controller="Home" asp-action="Review" method="post">
+        <div class="row test">
+            <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                <span asp-validation-for="Name" style="color:red;" ></span>
+                <input class="form-control" id="name" asp-for="Name" placeholder="Name">
+                </div>
+                <div class="col-sm-6 form-group">
+                <span asp-validation-for="Place" style="color:red;"></span>
+                <input class="form-control" id="Restaurant" asp-for="Place" placeholder="Restaurant Name" type="text">
+                </div>
+                <div class="col-sm-6 form-group">
+                <span asp-validation-for="Location" style="color:red;"></span>
+                <input class="form-control" id="location" asp-for="Location" placeholder="Address" type="text"> <br>
+                <span asp-validation-for="Stars" style="color:red;"></span>
+                <label for="rating">Rating: </label>
+                <select class="selectpicker" asp-for="Stars">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </div>
+            </div>
+            <span asp-validation-for="Review" style="color:red;"></span>
+            <textarea class="form-control" id="comments" asp-for="Review" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                <div class="col-md-12 form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <!--<input type="submit" name="" value="Submit Review">-->
+                </div>
+            </div> 
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+
+

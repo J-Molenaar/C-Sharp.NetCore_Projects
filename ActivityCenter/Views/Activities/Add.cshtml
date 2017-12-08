@@ -1,0 +1,42 @@
+@model ActivityCenter.Models.ActivitiesViewModel
+
+@{
+    ViewData["Title"] = "Add";
+}
+<br>
+<a href="/activities">Activities</a> <a href="/logout">Logout</a> <br>
+<h4>Add Activity:</h4>
+
+<form asp-controller="Activities" asp-action="create" method="post">
+
+        <span asp-validation-for="name"></span>
+        <label for="name">Title</label>
+        <input asp-for="name">
+        <br>
+        
+        <span asp-validation-for="date"></span>
+        <label for="date">Date</label>
+        <input type="datetime-local" asp-for="date">
+        <br>
+
+        <span asp-validation-for="duration"></span>
+        <label for="duration">Duration</label>
+        <input type="number" asp-for="duration">
+        <br>
+
+        <label for="durationtype">Duration Type</label><br>
+        <div class="col-sm-2">
+            <select name="durationtype">
+                <option value="Minutes">Minutes</option>
+                <option value="Hours">Hours</option>
+                <option value="Days">Days</option>
+            </select> <br>
+        </div>    
+        <br>
+        <br>
+        <span asp-validation-for="description"></span>
+        <label for="description">Description of Activity</label><br>
+        <br><textarea class="form-control" id="description" asp-for="description"rows="5"></textarea>
+        <br>
+        <br><input class="btn btn-primary" type="submit" value="Add Event">
+</form>

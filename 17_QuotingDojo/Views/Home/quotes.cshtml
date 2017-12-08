@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Quotes";
+}
+<h1>Here are the quotes:</h1>
+
+@{
+    foreach(var quote in @ViewBag.quotes){
+        <div>
+        <p>@quote["name"]</p>
+        <p>@quote["quote"]</p>         
+        </div>
+    }
+}
+<a href="/"> <button type="">Back to Add Quote</button></a>
